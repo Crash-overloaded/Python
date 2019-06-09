@@ -2,7 +2,7 @@
 
 from googlesearch import search
 import time
-raw_data=open('/root/Desktop/Python/search.txt','w')
+raw_data=open('search.txt','w')
 data=input("Enter something you want to search:-")
 for i in search(data,tld="co.in",stop=10):
 	print(i)
