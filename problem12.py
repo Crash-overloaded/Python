@@ -8,4 +8,4 @@ a=0
 for i in search(data,tld="co.in",stop=3):
 	a=a+1
 	url=pyqrcode.create(i)
-	url.svg("qrscan.svg"+str(a),scale=8)
+	url.svg("qrscan"+a+".svg",scale=8)
