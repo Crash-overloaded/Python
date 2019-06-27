@@ -40,20 +40,18 @@ part.add_header("Content-Disposition","attachment: filename= "+filename)
 msg.attach(part)
 text=msg.as_string()
 
-while True:
 # Initializing SMTP server 
 # Using Gmail smtp server  ,  there port number is 587
-	server = smtplib.SMTP("smtp.gmail.com",587)
+server = smtplib.SMTP("smtp.gmail.com",587)
 
 # Initializing secure connection
-	server.starttls()
+server.starttls()
 
 # Login credentials
-	server.login(email_sen,passwd)
+server.login(email_sen,passwd)
 
 # Sending mail 
-	server.sendmail(email_sen,email_rec,text)
+server.sendmail(email_sen,email_rec,text)
 
 # Ending the sevice
-	server.quit()
-	print("i")
+server.quit()
