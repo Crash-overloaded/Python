@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-string=input("Enter a string:--")
+string=input("Enter a string::--")
 string_list=[]
 new_string_list=[]
 new_string=""
