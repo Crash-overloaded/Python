@@ -9,7 +9,7 @@ class Car():
 honda = Car('City',2017,1000000)
 tata = Car('Nano',2016,200000)
 
+# Creating Instance Variable for honda Object
+honda.cc = 1500
 
-
-
-print(honda.price)
+print(honda.__dict__)
