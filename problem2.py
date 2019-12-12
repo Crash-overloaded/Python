@@ -8,5 +8,8 @@ for i in search(data,tld="co.in",stop=10):
 	print(i)
 	raw_data.write(i+" \n")
 	time.sleep(1)
+	print(i)
+	raw_data.write(i+" \n")
+	time.sleep(1)
 raw_data.close()
 	
